@@ -1,0 +1,66 @@
+#everything {
+  display: grid;
+  border: solid 2px rgb(74, 3, 255);
+  box-shadow: 5px 5px rgb(74, 3, 255);
+  background-color: black;
+  width: 800px;
+  height: auto;
+  border-radius: 5px;
+  padding: 10px 50px 10px 50px;
+  transition: 0.5s;
+  margin: 0 0 50px 0px;
+}
+
+#everything:hover {
+  border: solid 2px white;
+  box-shadow: 15px 15px rgb(255, 255, 255);
+  transition: 0.5s;
+}
+
+#everything:hover h2 {
+  border-top: solid 2px white;
+  border-bottom: solid 2px white;
+}
+
+#map {
+  max-width: 100%;
+  margin-bottom: 20px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #555;
+}

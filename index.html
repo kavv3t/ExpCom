@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info'Champ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main/general.css">
+  <link rel="stylesheet" href="styles/main/header.css">
+  <link rel="stylesheet" href="styles/main/sidebar.css">
+  <link rel="stylesheet" href="styles/main/corps.css">
+  <link rel="stylesheet" href="styles/main/sunshine.css">
+  <script src="js/toggleMenu.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="left-section">
+        <div class="menu-btn" onclick="toggleSidebar()">☰</div>
+      </div>
+      <div class="right-section">
+        <p class="section">Mon CV</p>
+      </div>
+    </header>
+    <nav class="sidebar">
+      <div class="sidebar-link">
+        <div class="container">
+          <div class="cloud front">
+            <span class="left-front"></span>
+            <span class="right-front"></span>
+          </div>
+          <span class="sun sunshine"></span>
+          <span class="sun"></span>
+          <div class="cloud back">
+            <span class="left-back"></span>
+            <span class="right-back"></span>
+          </div>
+        </div>
+          <ul class="u">
+              <li class="li1"><a href="index.html"><p class="ac">Accueil</p></a></li>
+              <li class="li1"><a href="apropos.html"><p class="ac">À propos</p></a></li>
+              <li class="li1"><a href="contact.html"><p class="ac">Contact</p></a></li>
+              <li class="li1"><a href="login.html"><p class="ac1">Administration</p></a></li>
+          </ul>
+          <div class="sidebar-link-2">
+            <img class="mycode" src="images/codebyme.png" alt="html">
+            <div class="sidebartool">
+              <div class="mycss">
+                <img class="mycss-link" src="images/cssbyme.png" alt="css">
+              </div>
+            </div>
+          </div>
+      </div>
+    </nav>
+
+    <main class="corps-principal-grid">
+      <div class="text-grid">
+        <section id="contact">
+          <h2>Contact</h2>
+          <p class="coo">Voici mes informations :</p>
+          <div class="u2-1">
+            <ul class="u2-2">
+              <li class="li2">Nom : Brock Liam</li>
+              <li class="li2">Téléphone : +1234567890</li>
+              <li class="li2">Email : brockliam528@gmail.com</li>
+            </ul>
+          </div>
+        </section>
+        <section id="formation">
+          <h2>Formations et Expérience pro</h2>
+          <table class="spaced-form">
+            <tbody>
+              <tr><th>De</th><th>à</th><th>activité</th></tr>
+              <tr><td>2022</td><td>2023</td><td>Découverte des langages</td></tr>
+              <tr><td>2023</td><td>2024</td><td>Algorithmie, Document Object Modeling, ...</td></tr>
+            </tbody>
+          </table>
+          <ul class="travaux">
+              <li>Projet de jeu vidéo; PixelPaws: Survival Odyssey</li>
+              <li>Projet de jeu vidéo; Pokémon: Cherry Blossom</li>
+          </ul>
+        </section>
+        </section>
+        <section id="langues">
+          <h2 class="lang">Langues</h2>
+          <table class="spaced-lang">
+              <tr><th>langue</th><th>niveau</th>
+              <tr><td>FR</td><td>C2</td>
+              <tr><td>EN</td><td>B2</td>
+              <tr><td>NL</td><td>A2</td>
+          </table>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Me Contacter</title>
+  <link rel="stylesheet" href="styles/addStyles/contact.css">
+  <link rel="stylesheet" href="styles/main/general.css">
+  <link rel="stylesheet" href="styles/main/header.css">
+  <link rel="stylesheet" href="styles/main/sidebar.css">
+  <link rel="stylesheet" href="styles/main/corps.css">
+  <link rel="stylesheet" href="styles/main/sunshine.css">
+  <script src="js/toggleMenu.js"></script>
+
+</head>
+<body>
+  <header class="header">
+    <div class="left-section">
+      <div class="menu-btn" onclick="toggleSidebar()">☰</div>
+    </div>
+    <div class="right-section">
+      <p class="section">Mon CV</p>
+    </div>
+  </header>
+  <nav class="sidebar">
+    <div class="sidebar-link">
+      <div class="container">
+        <div class="cloud front">
+          <span class="left-front"></span>
+          <span class="right-front"></span>
+        </div>
+        <span class="sun sunshine"></span>
+        <span class="sun"></span>
+        <div class="cloud back">
+          <span class="left-back"></span>
+          <span class="right-back"></span>
+        </div>
+      </div>
+        <ul class="u">
+            <li class="li1"><a href="index.html"><p class="ac">Accueil</p></a></li>
+            <li class="li1"><a href="apropos.html"><p class="ac">À propos</p></a></li>
+            <li class="li1"><a href="contact.html"><p class="ac">Contact</p></a></li>
+            <li class="li1"><a href="login.html"><p class="ac1">Administration</p></a></li>
+        </ul>
+        <div class="sidebar-link-2">
+          <img class="mycode" src="images/codebyme.png" alt="html">
+          <div class="sidebartool">
+            <div class="mycss">
+              <img class="mycss-link" src="images/cssbyme.png" alt="css">
+            </div>
+          </div>
+        </div>
+    </div>
+  </nav>
+
+<main class="corps-principal-grid">
+  <div class="text-grid">
+    <section id="everything">
+      <h2>Coordonnées</h2>
+      <ul>
+        <li>Nom de l'entreprise : ExempleEntreprise</li>
+        <li>Adresse : 123 rue de l'exemple, Faimes, Belgique</li>
+        <li>Téléphone : +XX XXX XXX XXX</li>
+        <li>Email : brockliam528@gmail.com</li>
+      </ul>
+    </section>
+    <section id="everything">
+      <!-- Formulaire de contact -->
+      <h2>Formulaire de contact</h2>
+      <form action="traitement_formulaire.php" method="post">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required><br><br>
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="sujet">Sujet :</label>
+        <input type="text" id="sujet" name="sujet" required><br><br>
+
+        <label for="message">Message :</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+        <input type="submit" value="Envoyer">
+      </form>
+    </section>
+  </div>
+</main>
+</body>
+</html>

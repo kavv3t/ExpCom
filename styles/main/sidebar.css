@@ -1,0 +1,175 @@
+.sidebar {
+  display: block;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  border-right: solid 6px black;
+  width: 200px;
+  z-index: 2000;
+  padding-top: 5px;
+  background-image: linear-gradient(to top, rgb(74, 3, 255), rgb(54, 0, 190), rgb(39, 0, 138), rgb(0, 0, 0));
+}
+
+.sidebar-link {
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  align-items: center;
+}
+
+nav {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.u {
+  list-style-type: none;
+  padding: 0px;
+  margin: 10px 10px 4em 10px;
+  background-color: rgb(255, 255, 255);
+  border: solid 1px rgb(255, 255, 255);
+  border-radius: 5px;
+}
+
+.li1 a {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  padding: 10px 10px 10px 10px;
+  text-decoration: none;
+  color: black;
+  border: solid 1px rgb(255, 255, 255);
+  border-radius: 5px;
+}
+
+.li1 a:hover {
+  background-color: rgb(69, 69, 69);
+  color: white;
+  border: solid 1px rgb(69, 69, 69);
+  border-radius: 5px;
+}
+
+.ac1:hover {
+  animation: admin 8s infinite;
+}
+
+.li1:hover .ac {
+  padding-left: 40px;
+  transition: 0.5s;
+}
+
+.sidebar-link div {
+  font-size: 10px;
+}
+
+@keyframes admin {
+
+  0% {
+    color: red;
+  }
+
+  14.3% {
+    color: violet;
+  }
+
+  28.6% {
+    color: indigo;
+  }
+
+  42.9% {
+    color: blue;
+  }
+
+  57.1% {
+    color: green;
+  }
+
+  71.4% {
+    color: yellow;
+  }
+
+  85.7% {
+    color: orange;
+  }
+
+  100% {
+    color: red;
+  }
+}
+
+.sidebar-link-2 {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.mycode {
+  height: 250px;
+  margin-top: 150px;
+  margin-bottom: -150px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px white;
+  transition: 0.3s;
+}
+
+.sidebar-link-2 .sidebartool .mycss-link {
+  height: 150px;
+  width: auto;
+  margin-left: 200px;
+  border: 2px solid;
+  border-radius: 10px;
+  opacity: 0;
+  transition: 1s;
+}
+
+.sidebar-link-2 .sidebartool {
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.sidebar-link-2:hover .sidebartool .mycss-link {
+  margin-left: 300px;
+  opacity: 1;
+  transform: 1s;
+  box-shadow: 0px 0px 15px white;
+}
+
+.mycode:hover {
+  box-shadow: 2px 2px white;
+  transition: 0.3s;
+}
+
+.mycode:active {
+  translate: 2px 2px;
+  box-shadow: none;
+}
+
+@media only screen and (orientation: portrait) and (max-width: 900px) {
+  .sidebar {
+    display: none;
+    transition: 1s;
+  }
+  .header {
+    left: 0;
+  }
+}
+
+@media only screen and (orientation: portrait) and (max-width: 900px) {
+  .menu-btn {
+    display: block;
+    cursor: pointer;
+  }
+  .sidebar.active {
+    display: block;
+  }
+  .header.active {
+    left: 200px;
+  }
+}

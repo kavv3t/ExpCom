@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Authentification</title>
+  <link rel="stylesheet" href="styles/addStyles/login.css">
+  <link rel="stylesheet" href="styles/main/general.css">
+  <link rel="stylesheet" href="styles/main/header.css">
+  <link rel="stylesheet" href="styles/main/sidebar.css">
+  <link rel="stylesheet" href="styles/main/corps.css">
+  <link rel="stylesheet" href="styles/main/sunshine.css">
+  <script src="js/toggleMenu.js"></script>
+</head>
+<body>
+<header class="header">
+  <div class="left-section">
+    <div class="menu-btn" onclick="toggleSidebar()">☰</div>
+  </div>
+  <div class="right-section">
+    <p class="section">Authentification</p>
+  </div>
+</header>
+<nav class="sidebar">
+  <div class="sidebar-link">
+    <div class="container">
+      <div class="cloud front">
+        <span class="left-front"></span>
+        <span class="right-front"></span>
+      </div>
+      <span class="sun sunshine"></span>
+      <span class="sun"></span>
+      <div class="cloud back">
+        <span class="left-back"></span>
+        <span class="right-back"></span>
+      </div>
+    </div>
+      <ul class="u">
+          <li class="li1"><a href="index.html"><p class="ac">Accueil</p></a></li>
+          <li class="li1"><a href="apropos.html"><p class="ac">À propos</p></a></li>
+          <li class="li1"><a href="contact.html"><p class="ac">Contact</p></a></li>
+          <li class="li1"><a href="login.html"><p class="ac1">Administration</p></a></li>
+      </ul>
+      <div class="sidebar-link-2">
+        <img class="mycode" src="images/codebyme.png" alt="html">
+        <div class="sidebartool">
+          <div class="mycss">
+            <img class="mycss-link" src="images/cssbyme.png" alt="css">
+          </div>
+        </div>
+      </div>
+  </div>
+</nav>
+<main class="contenu">
+  <div class="log">
+    <form id="login-form">
+      <label for="username">Nom d'utilisateur:</label>
+      <input type="text" id="username" name="username" required>
+      <label for="password">Mot de passe:</label>
+      <input type="password" id="password" name="password" required>
+      <button type="submit">Se connecter</button>
+    </form>
+  </div>
+</main>
+</body>
+</html>

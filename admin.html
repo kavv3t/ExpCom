@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Espace administrateur</title>
+  <link rel="stylesheet" href="styles/addStyles/admin.css">
+  <link rel="stylesheet" href="styles/main/general.css">
+  <link rel="stylesheet" href="styles/main/header.css">
+  <link rel="stylesheet" href="styles/main/sidebar.css">
+  <link rel="stylesheet" href="styles/main/corps.css">
+  <link rel="stylesheet" href="styles/main/sunshine.css">
+  <script src="js/toggleMenu.js"></script>
+</head>
+<body>
+<header class="header">
+  <div class="left-section">
+    <div class="menu-btn" onclick="toggleSidebar()">☰</div>
+  </div>
+  <div class="right-section">
+    <p class="section">Espace Administrateur</p>
+  </div>
+</header>
+<nav class="sidebar">
+  <div class="sidebar-link">
+    <div class="container">
+      <div class="cloud front">
+        <span class="left-front"></span>
+        <span class="right-front"></span>
+      </div>
+      <span class="sun sunshine"></span>
+      <span class="sun"></span>
+      <div class="cloud back">
+        <span class="left-back"></span>
+        <span class="right-back"></span>
+      </div>
+    </div>
+      <ul class="u">
+          <li class="li1"><a href="index.html"><p class="ac">Accueil</p></a></li>
+          <li class="li1"><a href="apropos.html"><p class="ac">À propos</p></a></li>
+          <li class="li1"><a href="contact.html"><p class="ac">Contact</p></a></li>
+          <li class="li1"><a href="login.html"><p class="ac1">Administration</p></a></li>
+      </ul>
+      <div class="sidebar-link-2">
+        <img class="mycode" src="images/codebyme.png" alt="html">
+        <div class="sidebartool">
+          <div class="mycss">
+            <img class="mycss-link" src="images/cssbyme.png" alt="css">
+          </div>
+        </div>
+      </div>
+  </div>
+</nav>
+<main class="corps-principal-grid">
+  <div class="text-grid">
+    <section id="modif">
+      <h2>Modifier le contenu du CV</h2>
+      <form id="cv-form">
+        <label for="name">Nom:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="education">Parcours académique:</label>
+        <textarea id="education" name="education" required></textarea>
+        <label for="experience">Expérience professionnelle:</label>
+        <textarea id="experience" name="experience" required></textarea>
+        <label for="passion">Passion:</label>
+        <textarea id="passion" name="passion" required></textarea>
+        <button type="submit">Enregistrer</button>
+      </form>
+    </section>
+    <section id="modif">
+      <h2>Modifier le contenu de la page À propos</h2>
+      <form id="about-form">
+        <label for="about">À propos de moi:</label>
+        <textarea id="about" name="about" required></textarea>
+        <button type="submit">Enregistrer</button>
+      </form>
+    </section>
+  </div>
+</main>
+</body>
+</html>

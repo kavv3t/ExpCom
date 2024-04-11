@@ -1,0 +1,57 @@
+#modif {
+  display: grid;
+  border: solid 2px rgb(74, 3, 255);
+  box-shadow: 5px 5px rgb(74, 3, 255);
+  border-radius: 5px;
+  background-color: black;
+  width: 800px;
+  height: auto;
+  padding: 10px 50px 10px 50px;
+  transition: 0.5s;
+  margin: 0 0 50px 0px;
+}
+
+#modif:hover {
+  border: solid 2px white;
+  box-shadow: 15px 15px white;
+  transition: 0.5s;
+}
+
+#modif:hover h2 {
+  border-top: solid 2px white;
+  border-bottom: solid 2px white;
+}
+
+form {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #555;
+}
