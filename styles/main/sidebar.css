@@ -172,4 +172,7 @@ nav {
   .header.active {
     left: 200px;
   }
+  .right-section.active {
+    display: none;
+  }
 }
