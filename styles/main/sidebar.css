@@ -166,6 +166,9 @@ nav {
     display: block;
     cursor: pointer;
   }
+  .menu-btn:active {
+    animation: slide 2s;
+  }
   .sidebar.active {
     display: block;
   }
@@ -174,5 +177,11 @@ nav {
   }
   .right-section.active {
     display: none;
+  }
+}
+
+@keyframes slide {
+  80% {
+    transform: translateX(50px);
   }
 }

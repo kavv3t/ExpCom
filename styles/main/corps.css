@@ -5,7 +5,8 @@
   padding: 30px 30px 30px 30px;
 }
 
-.text-grid {
+.text-grid,
+.text-grid-2 {
   display: grid;
   justify-content: center;
   align-items: center;
@@ -103,7 +104,7 @@ th {
   }
 }
 
-/*    Acceuil page    */
+/*    Acceuil page  1  */
 @media only screen and (orientation: portrait) and (max-width: 800px) {
   body {
     display: grid;
@@ -123,9 +124,14 @@ th {
     width: auto;
     transform: scale(0.65);
   }
+
+  .text-grid-2 {
+    width: auto;
+    transform: scale(0.75);
+  }
 }
 
-/*    Acceuil page    */
+/*    Acceuil page  2  */
 @media only screen and (orientation: portrait) and (min-width: 801px) and (max-width: 900px) {
   body {
     display: grid;
@@ -141,13 +147,14 @@ th {
     padding: 0;
   }
 
-  .text-grid {
+  .text-grid,
+  .text-grid-2 {
     width: auto;
     transform: scale(0.85);
   }
 }
 
-/*    Acceuil page    */
+/*    Acceuil page 3   */
 @media only screen and (orientation: portrait) and (min-width: 901px) and (max-width: 1100px) {
   body {
     display: grid;
@@ -164,8 +171,30 @@ th {
     padding: 0;
   }
 
-  .text-grid {
+  .text-grid,
+  .text-grid-2 {
     width: auto;
     transform: scale(0.85);
+  }
+}
+
+/*     Toutes les autres     */
+@media only screen and (orientation: portrait) {
+  #contact, 
+  #formation,
+  #langues,
+  #myself,
+  #everything {
+    box-shadow: 0px 5px rgb(74, 3, 255);
+    transition: 0.5s;
+  }
+
+  #contact:hover, 
+  #formation:hover,
+  #langues:hover,
+  #myself:hover,
+  #everything:hover {
+    box-shadow: 0px 15px rgb(255, 255, 255);
+    transition: 0.5s;
   }
 }
